@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/HKK2l/euNaIv8kiVu00ao1PFK+jAbkvATDbv3tGauTSf4lsMIUwQu89TirtFXU5IAO88YdXB8lCN/2I6CEn9Q==",
+  "dgSpecHash": "1PTwUGS8Z3l2tlcNXY9mSTK7FXaRx1kcZEnowJzvugBH3erTeZ6urJUc8MQYRsQ9Ro7e7KRttCXOgqDX1tBH0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LY106002\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+  "projectFilePath": "C:\\Users\\LY106002\\Documents\\GitHub\\UnityGRPC\\Server\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LY106002\\.nuget\\packages\\google.protobuf\\3.11.2\\google.protobuf.3.11.2.nupkg.sha512",
     "C:\\Users\\LY106002\\.nuget\\packages\\grpc.aspnetcore\\2.27.0\\grpc.aspnetcore.2.27.0.nupkg.sha512",
     "C:\\Users\\LY106002\\.nuget\\packages\\grpc.aspnetcore.server\\2.27.0\\grpc.aspnetcore.server.2.27.0.nupkg.sha512",
     "C:\\Users\\LY106002\\.nuget\\packages\\grpc.aspnetcore.server.clientfactory\\2.27.0\\grpc.aspnetcore.server.clientfactory.2.27.0.nupkg.sha512",
-    "C:\\Users\\LY106002\\.nuget\\packages\\grpc.core.api\\2.27.0\\grpc.core.api.2.27.0.nupkg.sha512",
+    "C:\\Users\\LY106002\\.nuget\\packages\\grpc.core\\2.38.1\\grpc.core.2.38.1.nupkg.sha512",
+    "C:\\Users\\LY106002\\.nuget\\packages\\grpc.core.api\\2.38.1\\grpc.core.api.2.38.1.nupkg.sha512",
     "C:\\Users\\LY106002\\.nuget\\packages\\grpc.net.client\\2.27.0\\grpc.net.client.2.27.0.nupkg.sha512",
     "C:\\Users\\LY106002\\.nuget\\packages\\grpc.net.clientfactory\\2.27.0\\grpc.net.clientfactory.2.27.0.nupkg.sha512",
     "C:\\Users\\LY106002\\.nuget\\packages\\grpc.net.common\\2.27.0\\grpc.net.common.2.27.0.nupkg.sha512",

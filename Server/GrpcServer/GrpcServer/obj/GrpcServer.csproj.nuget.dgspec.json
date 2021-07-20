@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LY106002\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj": {}
+    "C:\\Users\\LY106002\\Documents\\GitHub\\UnityGRPC\\Server\\GrpcServer\\GrpcServer\\GrpcServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LY106002\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj": {
+    "C:\\Users\\LY106002\\Documents\\GitHub\\UnityGRPC\\Server\\GrpcServer\\GrpcServer\\GrpcServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LY106002\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+        "projectUniqueName": "C:\\Users\\LY106002\\Documents\\GitHub\\UnityGRPC\\Server\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
         "projectName": "GrpcServer",
-        "projectPath": "C:\\Users\\LY106002\\source\\repos\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
+        "projectPath": "C:\\Users\\LY106002\\Documents\\GitHub\\UnityGRPC\\Server\\GrpcServer\\GrpcServer\\GrpcServer.csproj",
         "packagesPath": "C:\\Users\\LY106002\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LY106002\\source\\repos\\GrpcServer\\GrpcServer\\obj\\",
+        "outputPath": "C:\\Users\\LY106002\\Documents\\GitHub\\UnityGRPC\\Server\\GrpcServer\\GrpcServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,10 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.27.0, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.38.1, )"
             }
           },
           "imports": [

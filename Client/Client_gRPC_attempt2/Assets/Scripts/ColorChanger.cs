@@ -17,7 +17,7 @@ public class ColorChanger : MonoBehaviour
 
     public void Start()
     {
-        _channel = new Channel("https://localhost", 5001, ChannelCredentials.Insecure);
+        _channel = new Channel("127.0.0.1:50051", ChannelCredentials.Insecure);
         _client = new ColorGenerator.ColorGeneratorClient(_channel);
         Debug.Log("Channel and Client established");
     }
@@ -37,8 +37,6 @@ public class ColorChanger : MonoBehaviour
 
     public string GetNewColor(string currentColor)
     {
-        _channel = new Channel("https://localhost", 5001, ChannelCredentials.Insecure);
-        _client = new ColorGenerator.ColorGeneratorClient(_channel);
         var clientRequest = new CurrentColor { Color = currentColor };
         var result = _client.GetRandomColor(clientRequest);
         Debug.Log($"Returned Value: { result.Color }");
