@@ -32,7 +32,11 @@ public class ColorChanger : MonoBehaviour
     {
         var currentColorSend = ColorUtility.ToHtmlStringRGBA(currentColor);
         var newColor = GetNewColor(currentColorSend);
-        return Color.red;
+
+        var validColor = ColorUtility.TryParseHtmlString("#" + newColor.ToUpper(), out var applyColor);
+
+        // Return New Color if valid & default otherwise
+        return validColor ? applyColor : defaultColor;
     }
 
     public string GetNewColor(string currentColor)

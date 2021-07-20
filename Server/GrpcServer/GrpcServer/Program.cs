@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,29 +14,14 @@ namespace GrpcServer
 {
     public class Program
     {
-        //    public static void Main(string[] args)
-        //    {
-        //        CreateHostBuilder(args).Build().Run();
-        //    }
-
-        //    // Additional configuration is required to successfully run gRPC on macOS.
-        //    // For instructions on how to configure Kestrel and gRPC clients on macOS, visit https://go.microsoft.com/fwlink/?linkid=2099682
-        //    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        //        Host.CreateDefaultBuilder(args)
-        //            .ConfigureWebHostDefaults(webBuilder =>
-        //            {
-        //                webBuilder.UseStartup<Startup>();
-        //            });
-        //}
-
         static void Main(string[] args)
         {
-            const int Port = 50051;
+            const int port = 50051;
 
-            Server server = new Server
+            var server = new Server
             {
                 Services = { ColorGenerator.BindService(new SayColorImpl()) },
-                Ports = { new ServerPort("localhost", Port, ServerCredentials.Insecure) }
+                Ports = { new ServerPort("localhost", port, ServerCredentials.Insecure) }
             };
             server.Start();
             Console.WriteLine("Server Start On Localhost:50051");
@@ -45,13 +31,18 @@ namespace GrpcServer
         }
     }
 
-    class SayColorImpl : ColorGenerator.ColorGeneratorBase
+    internal class SayColorImpl : ColorGenerator.ColorGeneratorBase
     {
+        private readonly Random _random = new Random();
+
         public override Task<NewColor> GetRandomColor(CurrentColor request, ServerCallContext context)
         {
+            var randomColor = Color.FromArgb(_random.Next(256), _random.Next(256), _random.Next(256));
+            Console.WriteLine($"Sent Color: {randomColor} ");
+
             return Task.FromResult(new NewColor
             {
-                Color = "#0000FF"
+                Color = randomColor.Name
             });
         }
     }
