@@ -58,4 +58,3 @@ C:\Users\LY106002\Documents\GitHub\UnityGRPC\Server\GrpcServer\GrpcServer\obj\De
 C:\Users\LY106002\Documents\GitHub\UnityGRPC\Server\GrpcServer\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.dll
 C:\Users\LY106002\Documents\GitHub\UnityGRPC\Server\GrpcServer\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.pdb
 C:\Users\LY106002\Documents\GitHub\UnityGRPC\Server\GrpcServer\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.genruntimeconfig.cache
-C:\Users\LY106002\Documents\GitHub\UnityGRPC\Server\GrpcServer\GrpcServer\obj\Debug\netcoreapp3.1\GrpcServer.csproj.AssemblyReference.cache
